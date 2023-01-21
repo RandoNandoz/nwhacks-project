@@ -1,23 +1,20 @@
 import './App.css';
+import { createUser, signInUser } from './backend/firebaseauth';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="https://www.ikea.com/ca/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-monstera__0614197_pe686822_s5.jpg" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a href="SignIn.html">a</a>
-      </header>
+      <form>
+        <label>Email</label>
+        <input type="text" />
+        <label>Password</label>
+        <input type="text" />
+      </form>
+      <button onClick={() => createUser(
+        document.getElementsByTagName("input")[0].value,
+        document.getElementsByTagName("input")[1].value
+      )}>Create User</button>
     </div>
   );
 }
