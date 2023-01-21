@@ -1,7 +1,12 @@
 import './App.css';
+import Header from './header'
 
 function App() {
+  <Header />
   return (
+
+    
+
     <div className="App">
       <header className="Home-header">
         <img src="https://www.ikea.com/ca/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-monstera__0614197_pe686822_s5.jpg" className="App-logo" alt="logo" />
