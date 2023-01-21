@@ -1,29 +1,28 @@
 import './App.css';
-import Header from './header'
+import { Route, Routes } from "react-router-dom"
+import Navbar from './NavBar';
+import Info from './pages/info'
+import LogPage from './pages/logpage';
+import Timetable from './pages/timetable';
+import Home from './pages/home'
+import Login from './pages/login';
+
 
 function App() {
-  <Header />
   return (
-
-    
-
-    <div className="App">
-      <header className="Home-header">
-        <img src="https://www.ikea.com/ca/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-monstera__0614197_pe686822_s5.jpg" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pages/info" element={<Info />} />
+          <Route path="/pages/LogPage" element={<LogPage />} />
+          <Route path="/pages/timetable" element={<Timetable />} />
+          <Route path="/pages/login" element={<Login/>} />
+        </Routes>
+      </div>
+    </>
+  )
 }
 
 export default App;
