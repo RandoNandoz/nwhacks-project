@@ -1,15 +1,17 @@
 import "./timetable.css";
 import Button from 'react-bootstrap/Button';
 import { sendReminderByTime, stopReminders} from "../backend/remindMe";
+import {getUser} from "../backend/getUser";
 
 export default function Timetable() {
+    console.log(getUser())
     return (
         <div className="table">
             <h1 className="title">
 				Plant Watering Schedule
 			</h1>
-                <Button variant="light">Remind me to water my plants</Button>
-                <Button variant="light">Cancel reminders</Button>
+                <Button variant="light" onClick={getUser() !== null ? sendReminderByTime(getUser().uid) : Function.prototype()}>Remind me to water my plants</Button>
+                <Button variant="light" onClick={getUser() !== null ? stopReminders(getUser().uid) : Function.prototype()}>Cancel reminders</Button>
 
         <div className="calendar">
         <h2 className="month"> January 2021 </h2>
