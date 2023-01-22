@@ -7,7 +7,7 @@ export default function Info() {
 					Plant Info
 				</h1>
                 <div class="plants">
-                    <h3 class="plant-name">Succulent</h3>
+                    <h3 class="plant-name" id="plant1">Succulent</h3>
                     <div class="non-title">
                         <img class="plant-pic" src=
                             "https://www.ikea.com/ca/en/images/products/fejka-artificial-potted-plant-with-pot-indoor-outdoor-succulent__0614211_pe686835_s5.jpg?f=s"
