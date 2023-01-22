@@ -15,6 +15,8 @@ export default class login extends React.Component {
     this.handlepassword = this.handlepassword.bind(this);
     this.handlephonenumber = this.handlephonenumber.bind(this);
     this.handleClickShowSignIn = this.handleClickShowSignIn.bind(this);
+    this.sumbitCreateAccount = this.sumbitCreateAccount.bind(this);
+    this.sumbitLogin = this.sumbitLogin.bind(this);
   }
 
   handleusername(event) {
@@ -53,7 +55,7 @@ export default class login extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <img src="https://cdn.discordapp.com/attachments/1066426699669057737/1066526497747243058/IMG_0391.png"alt="plant" ></img>
+        <img src="https://cdn.discordapp.com/attachments/1066426699669057737/1066526497747243058/IMG_0391.png" alt="plant" ></img>
         <div className="container">
           {this.state.showSignIn ? (
             <div className="Login">
@@ -72,7 +74,7 @@ export default class login extends React.Component {
                 <div className="info">
                   <label>Password:</label>
                   <input
-                    type="text"
+                    type="password"
                     value={this.state.password}
                     onChange={this.handlepassword}
                   />
@@ -108,7 +110,7 @@ export default class login extends React.Component {
                 <div className="info">
                   <label>Phone number:</label>
                   <input
-                    type="tel"
+                    type="text"
                     value={this.state.phonenumber}
                     onChange={this.handlephonenumber}
                   />
