@@ -30,7 +30,7 @@ export const sendReminderByTime = async (uid) => {
     if (uid == null) { return }
     const plants = await getUserPlantsFromDb(uid);
     console.log(plants);
-    for (const plant of plants) {
+    for (const plant of ["succulent"]) {
         console.log(plant)
         const userPhoneNumbers = getPhoneNumber(uid);
         console.log(userPhoneNumbers)
