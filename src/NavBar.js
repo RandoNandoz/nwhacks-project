@@ -1,5 +1,6 @@
 import './Navbar.css'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 export default function Navbar () {
     return <nav className="nav">
         <div className="container1">
