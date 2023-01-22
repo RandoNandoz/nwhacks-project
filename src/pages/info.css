@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.plant-pic {
+    width: 200px;
+}
+
+.non-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    margin: 0px 0px 50px 0px;
+}
+
+.description {
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+
+img {
+    border-radius: 20px;
+}

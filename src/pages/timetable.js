@@ -1,118 +1,81 @@
+import "./timetable.css";
+
 export default function Timetable() {
     return (
         <div class="table">
-            <h1>TIME TABLE</h1>
-            <table>
-                <thead>
+        <h2> January 2021 </h2>
+        <table>
+            <thead>
                 <tr>
-                    <td>
-                        <b>Day</b>
-                    </td>
-                    <td>
-                        <b>Sunday</b>
-                    </td>
-                    <td>
-                        <b>Monday</b>
-                    </td>
-                    <td>
-                        <b>Tuesday</b>
-                    </td>
-                    <td>
-                        <b>Wednesday</b>
-                    </td>
-                    <td>
-                        <b>Thursday</b>
-                    </td>
-                    <td>
-                        <b>Friday</b>
-                    </td>
-                    <td>
-                        <b>Saturday</b>
-                    </td>
+                    <th> Sun</th>
+                    <th> Mon</th>
+                    <th> Tue</th>
+                    <th> Wed</th>
+                    <th> Thu</th>
+                    <th> Fri</th>
+                    <th> Sat</th>
                 </tr>
-                </thead>
-                <tbody>
+            </thead>
+
+            <tbody>
                 <tr>
-                    <td>
-                        <b>Morning</b>
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing 
-                    </td>
-                    <td>
-                        Succulent 
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
                 </tr>
                 <tr>
-                    <td>
-                        <b>Afternoon</b>
+                    <td>3
+                        <p>succulent</p>
                     </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing 
-                    </td>
-                    <td>
-                        nothing 
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
                 </tr>
                 <tr>
-                    <td>
-                        <b>Evening</b>
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        Succulent 
-                    </td>
-                    <td>
-                        nothing 
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
-                    <td>
-                        nothing
-                    </td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
                 </tr>
-                </tbody>
-                
-            </table>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     );
 }

@@ -17,5 +17,6 @@ export default function LogPage() {
               <Button variant="primary">More info</Button>
             </Card.Body>
           </Card>
+          
       );
 }
