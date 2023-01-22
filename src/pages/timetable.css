@@ -1,8 +1,23 @@
+
 .table {
-    
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin: 10px 0px 10px 0px;
 }
 td {
     width: 100px;
     height: 100px;
+    text-align: right;
+    align-items: top;
+}
+h2 {
+    margin: 20px 0px 15px 0px;
+}
+
+p {
+    background-color: #094217;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
 }
