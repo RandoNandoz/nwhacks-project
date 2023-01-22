@@ -4,15 +4,15 @@ import { sendReminderByTime, stopReminders} from "../backend/remindMe";
 
 export default function Timetable() {
     return (
-        <div class="table">
-            <h1 class="title">
+        <div className="table">
+            <h1 className="title">
 				Plant Watering Schedule
 			</h1>
-                <Button variant="light" onClick={sendReminderByTime(this, null)}>Remind me to water my plants</Button>
-                <Button variant="light" onClick={stopReminders(this, null)}>Cancel reminders</Button>
+                <Button variant="light">Remind me to water my plants</Button>
+                <Button variant="light">Cancel reminders</Button>
 
-        <div class="calendar">      
-        <h2 class="month"> January 2021 </h2>
+        <div className="calendar">
+        <h2 className="month"> January 2021 </h2>
         <table>
             <thead>
                 <tr>
@@ -33,73 +33,74 @@ export default function Timetable() {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>1</td>
-                    <td>2</td>
+                    <td id="d1">1</td>
+                    <td id="d2">2</td>
                 </tr>
                 <tr>
                     <td>3
                         <p class="watering-day">succulent</p>
                     </td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6
+                    <td id="d3">4</td>
+                    <td id="d5">5</td>
+                    <td id="d6">6
                     <p class="watering-day">Chinese Money Plant</p>
                     </td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
+                    <td id="d7">7</td>
+                    <td id="d8">8</td>
+                    <td id="d9">9</td>
                 </tr>
                 <tr>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13
+                    <td id="d10">10</td>
+                    <td id="d11">11</td>
+                    <td id="d12">12</td>
+                    <td id="d13">13
                     <p class="watering-day">Chinese Money Plant</p>
                     </td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
+                    <td id="d14">14</td>
+                    <td id="d15">15</td>
+                    <td id="d16">16</td>
                 </tr>
                 <tr>
-                    <td>17
+                    <td id="d17">17
                     <p class="watering-day">succulent</p>
                     </td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20
+                    <td id="d18">18</td>
+                    <td id="d19">19</td>
+                    <td id="d20">20
                     <p class="watering-day">Chinese Money Plant</p>
                     </td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
+                    <td id="d21">21</td>
+                    <td id="d22">22</td>
+                    <td id="d23">23</td>
                 </tr>
                 <tr>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27
+                    <td id="d24">24</td>
+                    <td id="d25">25</td>
+                    <td id="d26">26</td>
+                    <td id="d27"> 27
                     <p class="watering-day">Chinese Money Plant</p>
                     </td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
+                    <td id="d28">28</td>
+                    <td id="d29">29</td>
+                    <td id="d30">30</td>
                 </tr>
                 <tr>
-                    <td>31
+                    <td id="d31">31
                     <p class="watering-day">succulent</p>
                     </td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3
+                    <td id="d32">1</td>
+                    <td id="d33">2</td>
+                    <td id="d34">3
                     <p class="watering-day">Chinese Money Plant</p>
                     </td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
+                    <td id="d35">4</td>
+                    <td id="d36">5</td>
+                    <td id="d37">6</td>
                 </tr>
             </tbody>
         </table>
-        </div>  
+        </div>
+            <script src="timetablelib.ts" async defer></script>
     </div>
     );
 }
