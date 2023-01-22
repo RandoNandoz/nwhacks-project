@@ -15,16 +15,34 @@ margin-top: 20px;
 }
 
 .card.bg-Success{
-    margin-top: 20px;
-    justify-content: space-evenly;
+    margin: 20px 0px 20px 0px;
     align-content: center;
 }
 
 .CardContainer{
     display: flex;
+    align-content: center;
     justify-content: space-evenly;
 }
 
 .cards{
     min-width: 1080px;
+    align-items: center;
+}
+
+.plantlist {
+    margin: 0 auto;
+}
+
+.logbuttons {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+    background-color: #2f3e46;
+    color: white;
+}
+
+.logbuttons:hover {
+    transform: scale(1.05);
 }

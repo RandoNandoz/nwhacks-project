@@ -38,13 +38,15 @@ class DeleteTest extends React.Component {
     }
     render() {
       let myheader;
+      let but;
       if (this.state.show) {
         myheader = <TestPlant />;
+        but = <button type="button" onClick={this.delHeader} class="logbuttons">Delete Plant</button>;
       };
       return (
         <div>
         {myheader}
-        <button type="button" onClick={this.delHeader}>Delete Plant</button>
+        {but}
         </div>
       );
     }
@@ -66,7 +68,7 @@ class DeleteTest extends React.Component {
       return (
         <div>
         {myheader}
-        <button type="button" onClick={this.addHeader}>Add Plant</button>
+        <button type="button" onClick={this.addHeader} class="logbuttons">Add Plant</button>
         </div>
       );
     }
@@ -78,8 +80,10 @@ export default function LogPage() {
         <div className='container1 log'>
             <div class="cards">
                 <h1 class="title">Plant Log</h1>
+                <div class="plantlist">
                     <AddTest />
                     <DeleteTest />
+                    </div>
                 </div>
               </div>
       
