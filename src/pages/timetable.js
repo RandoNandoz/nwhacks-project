@@ -1,6 +1,6 @@
 import "./timetable.css";
 import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import { sendReminderByTime, stopReminders} from "../backend/remindMe";
 
 export default function Timetable() {
     return (
@@ -8,7 +8,9 @@ export default function Timetable() {
             <h1 class="title">
 				Plant Watering Schedule
 			</h1>
-                <Button variant="light" href=''>Remind me to water my plants</Button>
+                <Button variant="light" onClick={sendReminderByTime(this, null)}>Remind me to water my plants</Button>
+                <Button variant="light" onClick={stopReminders(this, null)}>Cancel reminders</Button>
+
         <div class="calendar">      
         <h2 class="month"> January 2021 </h2>
         <table>
