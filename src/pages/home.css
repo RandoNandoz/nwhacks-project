@@ -19,12 +19,21 @@
     color: #2f3e46;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
+
+.container.home{
     height: 700px;
+    max-width: 1920px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center ;
+    flex-direction: row;
+    background-blend-mode: multiply;
+    background-image: url(https://cdn.discordapp.com/attachments/989877566099832866/1066582487670718524/logo2finfin.png);
+}
+
+.container.home::before{
+    
 }
 
 .col{

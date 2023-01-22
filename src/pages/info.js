@@ -2,7 +2,7 @@ import "./info.css";
 // long info page
 export default function Info() {
     return (
-			<div class="container">
+			<div class="container info">
 				<h1 class="title">
 					Plant Info
 				</h1>

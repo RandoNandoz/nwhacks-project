@@ -11,20 +11,24 @@ import './home.css'
 export default function Home() {
     return (
        
-        
-        <Row>
-        <Col className='col'>
-          <div className="title" id='one'>Plantis</div>
-          <div className="subtitle">For all your plant care needs</div>  
-          <ButtonGroup aria-label="Basic example" id='buttons'>
-                <Button variant="secondary" href='/pages/login'>Sign Up</Button>
-                <Button variant="secondary" href='/pages/login'>Log In</Button>
-            </ButtonGroup>
+        <div className='container home'>
+
+            <Row>
+            <Col className='col'>
+            <div className="title" id='one'>Plantis</div>
+            <div className="subtitle">For all your plant care needs</div>  
+            <ButtonGroup aria-label="Basic example" id='buttons'>
+                    <Button variant="secondary" href='/pages/login'>Sign Up</Button>
+                    <Button variant="secondary" href='/pages/login'>Log In</Button>
+                </ButtonGroup>
         </Col>
 
-          <Col className='col'><img src='https://cdn.discordapp.com/attachments/1066426699669057737/1066537772434858096/image.png' height={300}/>
-        </Col>
+          
         </Row>
+        </div>
+
+        
+       
       
      
     
