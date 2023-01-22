@@ -30,7 +30,9 @@ h1 {
 .description {
     text-align: justify;
     text-justify: inter-word;
-    
+    background-color: #84a98c;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 img {
