@@ -1,10 +1,6 @@
-.row{
-    display: flex;
-    justify-content: space-between;
-        
-}
 
-.title{
+
+.col .title{
      font-family: 'Raleway',sans-serif;
       font-size: 62px;
        font-weight: 800;
@@ -16,7 +12,7 @@
 }
 
 .subtitle{
-    color: #2f3e46; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center;
+    color: #2f3e46; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 400; line-height: 36px; margin: 0 0 24px; text-align: center;
 }
 
 #buttons{
@@ -32,5 +28,7 @@
 }
 
 .col{
-    flex-grow: 1
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 100px;
 }

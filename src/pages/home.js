@@ -14,7 +14,7 @@ export default function Home() {
         
         <Row>
         <Col className='col'>
-          <div className="title">Plantis</div>
+          <div className="title" id='one'>Plantis</div>
           <div className="subtitle">For all your plant care needs</div>  
           <ButtonGroup aria-label="Basic example" id='buttons'>
                 <Button variant="secondary" href='/pages/login'>Sign Up</Button>
