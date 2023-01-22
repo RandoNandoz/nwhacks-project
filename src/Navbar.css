@@ -13,14 +13,40 @@
 
   .container1{
     display: flex;
+    font-family: 'Raleway',sans-serif;
+    
+     font-weight: 800;
+      line-height: 72px;
+       margin: 0 0 24px;
+        text-align: center; 
+  text-transform: uppercase;
+  color: #2f3e46;
+
   }
 
   img{
     margin-left: 10px;
   }
   
+ul{
+    font-family: 'Raleway',sans-serif;
+    
+    font-size: 20px;
+     font-weight: 800;
+      line-height: 72px;
+       margin: 0 0 24px;
+        text-align: center; 
+  text-transform: uppercase;
+  color: #2f3e46;
+  height: 100px;
+}
+
+li{
+    padding-inline: 10px;
+}
+
   .nav {
-    background-color: rgb(167, 233, 204);
+    background-color: #f8fff3;
     color: white;
     display: flex;
     justify-content: space-between;
