@@ -50,7 +50,7 @@ export default class login extends React.Component {
     event.preventDefault();
     createUser(this.state.username, this.state.password);
     setTimeout(() => {
-        setPhoneNumber(this.state.phonenumber, getUser());
+        setPhoneNumber(this.state.phonenumber, getUser().uid);
     }, 1000);
     window.location.href = `/`;
   }
