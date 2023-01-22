@@ -3,6 +3,7 @@ import './login.css'
 export default function login() {
     return (
         <div class="wrapper">
+            <img src="https://cdn.discordapp.com/attachments/1066426699669057737/1066526497747243058/IMG_0391.png" alt="plant"></img>
             <div class="container">
                 <div class="Create-account">
                     <div class="info">
