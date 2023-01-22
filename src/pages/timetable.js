@@ -3,7 +3,7 @@ import "./timetable.css";
 export default function Timetable() {
     return (
         <div class="table">
-        <h2> January 2021 </h2>
+        <h2 class="month"> January 2021 </h2>
         <table>
             <thead>
                 <tr>
@@ -29,12 +29,12 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td>3
-                        <p>succulent</p>
+                        <p class="watering-day">succulent</p>
                     </td>
                     <td>4</td>
                     <td>5</td>
                     <td>6
-                    <p>plant 2</p>
+                    <p class="watering-day">plant 2</p>
                     </td>
                     <td>7</td>
                     <td>8</td>
@@ -45,7 +45,7 @@ export default function Timetable() {
                     <td>11</td>
                     <td>12</td>
                     <td>13
-                    <p>plant 2</p>
+                    <p class="watering-day">plant 2</p>
                     </td>
                     <td>14</td>
                     <td>15</td>
@@ -53,12 +53,12 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td>17
-                    <p>succulent</p>
+                    <p class="watering-day">succulent</p>
                     </td>
                     <td>18</td>
                     <td>19</td>
                     <td>20
-                    <p>plant 2</p>
+                    <p class="watering-day">plant 2</p>
                     </td>
                     <td>21</td>
                     <td>22</td>
@@ -69,7 +69,7 @@ export default function Timetable() {
                     <td>25</td>
                     <td>26</td>
                     <td>27
-                    <p>plant 2</p>
+                    <p class="watering-day">plant 2</p>
                     </td>
                     <td>28</td>
                     <td>29</td>
@@ -77,12 +77,12 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td>31
-                    <p>succulent</p>
+                    <p class="watering-day">succulent</p>
                     </td>
                     <td>1</td>
                     <td>2</td>
                     <td>3
-                    <p>plant 2</p>
+                    <p class="watering-day">plant 2</p>
                     </td>
                     <td>4</td>
                     <td>5</td>
