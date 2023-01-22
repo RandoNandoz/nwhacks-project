@@ -2,42 +2,29 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "./logpage.css";
 import TestPlant from '../components/test';
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-//import { God } from '../components/test';
-//import "./DeleteTest.js";
 import React from "react";
-import ReactDOM from 'react-dom/client';
->>>>>>> ae78e737e909b6dae8c77971e5315b339adb6e01
-import { God } from '../components/test';
-=======
-//import "./DeleteTest.js";
-import React from "react";
-import ReactDOM from 'react-dom/client';
 
-class DeleteTest extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {show: true};
-    }
-    delHeader = () => {
-      this.setState({show: false});
-    }
-    render() {
-      let myheader;
-      if (this.state.show) {
-        myheader = <TestPlant />;
-      };
-      return (
-        <div>
-        {myheader}
-        <button type="button" onClick={this.delHeader}>Delete Header</button>
-        </div>
-      );
-    }
-  }
->>>>>>> Stashed changes
+// class DeleteTest extends React.Component {
+//     constructor(props) {
+//       super(props);
+//       this.state = {show: true};
+//     }
+//     delHeader = () => {
+//       this.setState({show: false});
+//     }
+//     render() {
+//       let myheader;
+//       if (this.state.show) {
+//         myheader = <TestPlant />;
+//       };
+//       return (
+//         <div>
+//         {myheader}
+//         <button type="button" onClick={this.delHeader}>Delete Header</button>
+//         </div>
+//       );
+//     }
+//   }
 
 
 class DeleteTest extends React.Component {
