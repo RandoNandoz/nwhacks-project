@@ -1,7 +1,7 @@
 import { getUserPlantsFromDb } from "../backend/getUserPlantsFromDb";
-import { getUser } from "../backend/    r";
+import { getUser } from "../backend/getUser";
 const f = () => {
-    getUserPlantsFromDb(God.uid).then (
+    getUserPlantsFromDb(getUser().uid).then (
         (plants) => {
             plants.forEach(
                 (plant) => {

@@ -26,8 +26,8 @@ const app = initializeApp(firebaseConfig);
 
 const db = getDatabase(app);
 
-export const sendReminderByTime = async (e, uid) => {
-    e.preventDefault()
+export const sendReminderByTime = async (uid) => {
+    if (uid == null) { return }
     const plants = await getUserPlantsFromDb(uid);
     console.log(plants);
     for (const plant of plants) {
@@ -53,8 +53,8 @@ export const sendReminderByTime = async (e, uid) => {
 }
 
 
-export const stopReminders = (e, uid) => {
-    e.preventDefault()
+export const stopReminders = (uid) => {
+    if (uid == null) { return }
     const dbRef = ref(db);
     get(child(dbRef, `users/${uid}/pendingMsgs`)).then((snapshot) => {
         if (snapshot.exists()) {
