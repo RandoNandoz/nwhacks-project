@@ -48,3 +48,7 @@ footer{
 #noacc{
     border-style: outset;
 }
+
+h1 {
+    font-family: "Quicksand";
+}

@@ -10,11 +10,13 @@ export default function Timetable() {
             <h1 className="title">
 				Plant Watering Schedule
 			</h1>
-                <Button variant="light" onClick={getUser() !== null ? sendReminderByTime(getUser().uid) : Function.prototype()}>Remind me to water my plants</Button>
-                <Button variant="light" onClick={getUser() !== null ? stopReminders(getUser().uid) : Function.prototype()}>Cancel reminders</Button>
+                <Button variant="light" onClick={getUser() !== null ? sendReminderByTime(getUser().uid) : Function.prototype()}
+                class="reminderbuttons">Remind me to water my plants</Button>
+                <Button variant="light" onClick={getUser() !== null ? stopReminders(getUser().uid) : Function.prototype()}
+                class="reminderbuttons">Cancel reminders</Button>
 
         <div className="calendar">
-        <h2 className="month"> January 2021 </h2>
+        <h2 className="month"> January 2023 </h2>
         <table>
             <thead>
                 <tr>
@@ -40,7 +42,7 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td>3
-                        <p class="watering-day">succulent</p>
+                        <p class="watering-day">Succulent</p>
                     </td>
                     <td id="d3">4</td>
                     <td id="d5">5</td>
@@ -64,7 +66,7 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td id="d17">17
-                    <p class="watering-day">succulent</p>
+                    <p class="watering-day">Succulent</p>
                     </td>
                     <td id="d18">18</td>
                     <td id="d19">19</td>
@@ -88,7 +90,7 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td id="d31">31
-                    <p class="watering-day">succulent</p>
+                    <p class="watering-day">Succulent</p>
                     </td>
                     <td id="d32">1</td>
                     <td id="d33">2</td>
