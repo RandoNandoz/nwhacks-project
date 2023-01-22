@@ -12,6 +12,7 @@ export default class login extends React.Component {
       password: "",
       phonenumber: "",
       showSignIn: true,
+      clicked: false
     };
     this.handleusername = this.handleusername.bind(this);
     this.handlepassword = this.handlepassword.bind(this);
@@ -51,10 +52,12 @@ export default class login extends React.Component {
     setTimeout(() => {
         setPhoneNumber(this.state.phonenumber, getUser());
     }, 1000);
+    window.location.href = `/`;
   }
   sumbitLogin(event) {
     event.preventDefault();
     signInUser(this.state.username, this.state.password);
+    window.location.href = `/`;
   }
 
   render() {
@@ -62,81 +65,80 @@ export default class login extends React.Component {
       <div className="wrapper">
         <img src="https://cdn.discordapp.com/attachments/1066426699669057737/1066526497747243058/IMG_0391.png" alt="plant" ></img>
         <div className="container">
-          {this.state.showSignIn ? (
-            <div className="Login">
-              <form onSubmit={this.sumbitLogin}>
-                <div>
-                  <h1>Sign In</h1>
-                </div>
-                <div className="info">
-                  <label>Username:</label>
-                  <input
-                    type="text"
-                    value={this.state.username}
-                    onChange={this.handleusername}
-                    required
-                  />
-                </div>
-                <div className="info">
-                  <label>Password:</label>
-                  <input
-                    type="password"
-                    value={this.state.password}
-                    onChange={this.handlepassword}
-                    required
-                  />
-                </div>
-                <div className="info">
-                  <input type="submit" value="Sign In" />
-                </div>
-              </form>
-              <button onClick={this.handleClickShowSignIn}>{this.state.showSignIn ? `Don't have an acconut?` : `Sign In`}</button>
-            </div>
-          ) : (
-            <div className="Create-account">
-              <div>
-                <h1>Create Account</h1>
+            {this.state.showSignIn ? (
+              <div className="Login">
+                <form onSubmit={this.sumbitLogin}>
+                  <div>
+                    <h1>Sign In</h1>
+                  </div>
+                  <div className="info">
+                    <label>Username:</label>
+                    <input
+                      type="text"
+                      value={this.state.username}
+                      onChange={this.handleusername}
+                      required
+                    />
+                  </div>
+                  <div className="info">
+                    <label>Password:</label>
+                    <input
+                      type="password"
+                      value={this.state.password}
+                      onChange={this.handlepassword}
+                      required
+                    />
+                  </div>
+                  <div className="info">
+                    <input type="submit" value="Sign In"/>
+                  </div>
+                </form>
+                <button onClick={this.handleClickShowSignIn}>{this.state.showSignIn ? `Don't have an acconut?` : `Sign In`}</button>
               </div>
-              <form onSubmit={this.sumbitCreateAccount}>
-                <div className="info">
-                  <label>Username:</label>
-                  <input
-                    type="text"
-                    value={this.state.username}
-                    onChange={this.handleusername}
-                    required
-                  />
+            ) : (
+              <div className="Create-account">
+                <div>
+                  <h1>Create Account</h1>
                 </div>
-                <div className="info">
-                  <label>Password:</label>
-                  <input
-                    type="password"
-                    value={this.state.password}
-                    onChange={this.handlepassword}
-                    required
-                  />
-                </div>
-                <div className="info">
-                  <label>Phone number:</label>
-                  <input
-                    type="text"
-                    value={this.state.phonenumber}
-                    onChange={this.handlephonenumber}
-                    required
-                  />
-                </div>
-                <div className="info">
-                  <input type="submit" value="Create Account" />
-                </div>
-              </form>
-            </div>
-          )}
-        
+                <form onSubmit={this.sumbitCreateAccount}>
+                  <div className="info">
+                    <label>Username:</label>
+                    <input
+                      type="text"
+                      value={this.state.username}
+                      onChange={this.handleusername}
+                      required
+                    />
+                  </div>
+                  <div className="info">
+                    <label>Password:</label>
+                    <input
+                      type="password"
+                      value={this.state.password}
+                      onChange={this.handlepassword}
+                      required
+                    />
+                  </div>
+                  <div className="info">
+                    <label>Phone number:</label>
+                    <input
+                      type="text"
+                      value={this.state.phonenumber}
+                      onChange={this.handlephonenumber}
+                      required
+                    />
+                  </div>
+                  <div className="info">
+                    <input type="submit" value="Create Account"/>
+                  </div>
+                </form>
+              </div>
+            )}
         </div>
         <footer className="footer">
           <p className="text-footer">Copyright ©-All rights are reserved</p>
         </footer>
       </div>
-    );
+    )
   }
 }
