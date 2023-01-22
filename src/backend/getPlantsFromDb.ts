@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 
 export const getPlantsFromDb = () => {
     // read all plant data from db
-    const dbRef = ref(getDatab q    ase(app));
+    const dbRef = ref(getDatabase(app));
     get(child(dbRef, 'plants')).then((snapshot) => {
         if (snapshot.exists()) {
             console.log(snapshot.val());
