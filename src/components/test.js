@@ -49,7 +49,7 @@ export class TestPlant extends Component{
         <Card.Subtitle>
             {this.state.nickname}
         </Card.Subtitle>
-        <a href={this.state.links}>More info</a>
+        <Button href={this.state.links}>More info</Button>
         </Card.Body>
     </Card>)
     }
