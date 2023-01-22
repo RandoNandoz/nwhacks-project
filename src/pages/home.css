@@ -1,3 +1,36 @@
 .row{
     display: flex;
+    justify-content: space-between;
+        
+}
+
+.title{
+     font-family: 'Raleway',sans-serif;
+      font-size: 62px;
+       font-weight: 800;
+        line-height: 72px;
+         margin: 0 0 24px;
+          text-align: center; 
+    text-transform: uppercase;
+    color: #2f3e46;
+}
+
+.subtitle{
+    color: #2f3e46; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center;
+}
+
+#buttons{
+    color: #2f3e46;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    align-items: center;
+    justify-content: center ;
+}
+
+.col{
+    flex-grow: 1
 }

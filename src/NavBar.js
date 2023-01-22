@@ -16,7 +16,7 @@ export default function Navbar () {
             <a href="/pages/timetable">Timetable</a>
             </li>
             <li>
-            <a href="/pages/login">Login</a>
+            <a href="/pages/login">Log In</a>
             </li>
         </ul>
     </nav>

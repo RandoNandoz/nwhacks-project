@@ -11,21 +11,21 @@ import './home.css'
 export default function Home() {
     return (
        
-        <Container>
+        
         <Row>
-        <Col>
-          <div className="bg-light border">Plantis</div>
-          <div className="bg-light border">For all your plant care needs</div>  
-          <ButtonGroup aria-label="Basic example">
+        <Col className='col'>
+          <div className="title">Plantis</div>
+          <div className="subtitle">For all your plant care needs</div>  
+          <ButtonGroup aria-label="Basic example" id='buttons'>
                 <Button variant="secondary" href='/pages/login'>Sign Up</Button>
                 <Button variant="secondary" href='/pages/login'>Log In</Button>
             </ButtonGroup>
         </Col>
 
-          <Col><img src='https://media.istockphoto.com/id/1045368942/fr/vectoriel/cr%C3%A9ation-de-feuille-verte-abstraite-logo-ic%C3%B4ne-vector-jeu-dic%C3%B4nes-de-l%C3%A9cologie-ic%C3%B4ne-eco.jpg?s=612x612&w=0&k=20&c=mSeHhuilvfCOyvj-tIwYFFqjCNkJZJWGQV_atSMBTyQ='/>
+          <Col className='col'><img src='https://cdn.discordapp.com/attachments/1066426699669057737/1066537772434858096/image.png' height={300}/>
         </Col>
         </Row>
-      </Container>
+      
      
     
     )
