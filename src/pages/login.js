@@ -13,8 +13,7 @@ export default class login extends React.Component {
       username: "",
       password: "",
       phonenumber: "",
-      showSignIn: true,
-      clicked: false
+      showSignIn: true
     };
     this.handleusername = this.handleusername.bind(this);
     this.handlepassword = this.handlepassword.bind(this);
