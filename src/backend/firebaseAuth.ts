@@ -59,7 +59,3 @@ export const signInUser = (email: string, password: string) => {
     return user
 }
 
-
-export const userLinkPhoneNumber = (phoneNumber: string, user) => {
-
-}

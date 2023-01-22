@@ -1,8 +1,9 @@
 import {getPhoneNumber} from "./phoneNumbers";
-import {sendMsgOnDate} from "./scheduleSendMsg";
+import {cancelMsg, sendMsgOnDate} from "./scheduleSendMsg";
 import {getUserPlantsFromDb} from "./getUserPlantsFromDb";
 import {getDatabase, set, get, ref, child} from "firebase/database";
-import { initializeApp } from "firebase/app";
+import {initializeApp} from "firebase/app";
+
 const firebaseConfig = {
 
     apiKey: "AIzaSyDhQtFyzVzn8HyImunbxYc_dyzArZg0010",
@@ -31,6 +32,7 @@ export const sendReminderByTime = async (user) => {
     for (const plant of plants) {
         console.log(plant)
         const userPhoneNumbers = getPhoneNumber(user.uid);
+        console.log(userPhoneNumbers)
         let FutureDate = new Date(Date.now());
         for (const phoneNumber of userPhoneNumbers) {
             for (let i = 1; i <= 10; i++) {
@@ -42,7 +44,7 @@ export const sendReminderByTime = async (user) => {
                     let snapshot;
                     snapshot = await get(child(dbRef, `users/${user.uid}/pendingMsgs`));
                     snapshot.val().push(sid)
-                    set(ref(db, `users/${user.uid}`), {
+                    await set(ref(db, `users/${user.uid}`), {
                         'pendingMsgs': snapshot.val()
                     })
                 }
@@ -51,4 +53,15 @@ export const sendReminderByTime = async (user) => {
     }
 
     return plants
+}
+
+export const stopReminders = (user) => {
+    const dbRef = ref(db);
+    get(child(dbRef, `users/${user.uid}/pendingMsgs`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            for (const msg of snapshot.val()) {
+                cancelMsg(msg)
+            }
+        }
+    })
 }

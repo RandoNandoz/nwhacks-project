@@ -43,3 +43,18 @@ export const sendMsgOnDate = async (date: Date, plant: string, phone: string) =>
         }
     )
 }
+
+export const cancelMsg = (sid: string) => {
+    let params = new URLSearchParams();
+    params.append('Status', 'canceled')
+    axios.post(
+        `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages/${sid}.json`,
+        params,
+        {
+            auth: {
+                username: accountSid,
+                password: authToken
+            }
+        }
+    )
+}
