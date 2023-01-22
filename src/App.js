@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import Navbar from './NavBar';
 import Info from './pages/info'
 import LogPage from './pages/logpage';
-import Timetable from './pages/timetable';
+import Timetable from "./pages/timetable";
 import Home from './pages/home'
 import Login from './pages/login';
 import 'bootstrap/dist/css/bootstrap.min.css'
