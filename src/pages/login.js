@@ -50,8 +50,8 @@ export default class login extends React.Component {
     createUser(this.state.username, this.state.password);
     setTimeout(() => {
         setPhoneNumber(this.state.phonenumber, getUser().uid);
+        window.location.href = `/`;
     }, 1000);
-    window.location.href = `/`;
   }
   sumbitLogin(event) {
     event.preventDefault();
