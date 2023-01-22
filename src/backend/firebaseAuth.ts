@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, browserSessionPersistence, setPersistence } from "firebase/auth";
 
 const firebaseConfig = {
 
@@ -31,6 +31,7 @@ export const createUser = (email: string, password: string) => {
             // Signed in 
             user = userCredential.user;
             console.log("created user " + user.uid);
+            setPersistence(auth, browserSessionPersistence)
             // ...
         })
         .catch((error) => {
@@ -49,6 +50,7 @@ export const signInUser = (email: string, password: string) => {
             // Signed in
             user = userCredential.user;
             console.log("signed in user " + user.uid);
+            setPersistence(auth, browserSessionPersistence)
             // ...
         })
         .catch((error) => {
