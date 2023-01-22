@@ -1,23 +1,33 @@
 import './App.css';
+<<<<<<< HEAD
 import { createUser, signInUser } from './backend/firebaseAuth';
 import { SignInScreen } from './backend/SignInScreen';
+=======
+import { Route, Routes } from "react-router-dom"
+import Navbar from './NavBar';
+import Info from './pages/info'
+import LogPage from './pages/logpage';
+import Timetable from './pages/timetable';
+import Home from './pages/home'
+import Login from './pages/login';
+>>>>>>> 7f4646e385dd298cfdf06edb8dcf90a112e8ba6c
 
 
 function App() {
   return (
-    <div className="App">
-      <form>
-        <label>Email</label>
-        <input type="text" />
-        <label>Password</label>
-        <input type="text" />
-      </form>
-      <button onClick={() => createUser(
-        document.getElementsByTagName("input")[0].value,
-        document.getElementsByTagName("input")[1].value
-      )}>Create User</button>
-    </div>
-  );
+    <>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pages/info" element={<Info />} />
+          <Route path="/pages/LogPage" element={<LogPage />} />
+          <Route path="/pages/timetable" element={<Timetable />} />
+          <Route path="/pages/login" element={<Login/>} />
+        </Routes>
+      </div>
+    </>
+  )
 }
 
 export default App;
