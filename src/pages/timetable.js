@@ -1,11 +1,15 @@
 import "./timetable.css";
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 export default function Timetable() {
     return (
         <div class="table">
-<h1 class="title">
-					Plant Watering Schedule
-				</h1>
+            <h1 class="title">
+				Plant Watering Schedule
+			</h1>
+                <Button variant="light" href=''>Remind me to water my plants</Button>
+        <div class="calendar">      
         <h2 class="month"> January 2021 </h2>
         <table>
             <thead>
@@ -93,6 +97,7 @@ export default function Timetable() {
                 </tr>
             </tbody>
         </table>
+        </div>  
     </div>
     );
 }
