@@ -1,9 +1,8 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+
 import "./logpage.css";
 import TestPlant from '../components/test';
 import React from "react";
-import ReactDOM from 'react-dom/client';
+
 
 // class DeleteTest extends React.Component {
 //     constructor(props) {
