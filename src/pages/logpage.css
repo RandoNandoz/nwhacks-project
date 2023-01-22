@@ -7,3 +7,21 @@ display: flex;
 justify-content: center;
 margin-top: 20px;
 }
+
+#one{
+    background-color:  #52796f;
+    outline-color: #52796f;
+    border-color: #52796f;
+}
+
+.card.bg-Success{
+    margin-top: 20px;
+    margin-inline: 10px;
+    align-content: center;
+
+}
+
+.CardContainer{
+    display: flex;
+    justify-content: center;
+}
