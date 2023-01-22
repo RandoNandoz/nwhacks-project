@@ -1,6 +1,8 @@
 import "./login.css";
 import React from "react";
 import { createUser, signInUser } from "../backend/firebaseAuth";
+import Card from 'react-bootstrap/Card';
+
 
 export default class login extends React.Component {
   constructor(props) {
@@ -57,7 +59,8 @@ export default class login extends React.Component {
       <div className="wrapper">
         <img src="https://cdn.discordapp.com/attachments/1066426699669057737/1066526497747243058/IMG_0391.png" alt="plant" ></img>
         <div className="container login">
-          {this.state.showSignIn ? (
+        <Card body>
+        {this.state.showSignIn ? (
             <div className="Login">
               <form onSubmit={this.sumbitLogin}>
                 <div>
@@ -72,7 +75,7 @@ export default class login extends React.Component {
                   />
                 </div>
                 <div className="info">
-                  <label>Password:</label>
+                  <label>Password: </label>
                   <input
                     type="password"
                     value={this.state.password}
@@ -80,10 +83,10 @@ export default class login extends React.Component {
                   />
                 </div>
                 <div className="info">
-                  <input type="submit" value="Sign In" />
+                  <input type="submit" value="Submit" />
                 </div>
               </form>
-              <button onClick={this.handleClickShowSignIn}>{this.state.showSignIn ? `Don't have an acconut?` : `Sign In`}</button>
+              <button id="noacc" onClick={this.handleClickShowSignIn}>{this.state.showSignIn ? `Don't have an account?` : `Sign In`}</button>
             </div>
           ) : (
             <div className="Create-account">
@@ -121,6 +124,10 @@ export default class login extends React.Component {
               </form>
             </div>
           )}
+
+        </Card>;
+    
+          
         
         </div>
         <footer className="footer">

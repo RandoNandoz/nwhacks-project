@@ -10,22 +10,25 @@ import './home.css'
 
 export default function Home() {
     return (
-       
-        <div className='container home'>
+       <div className='background'>
 
-            <Row>
-            <Col className='col'>
-            <div className="title" id='one'>Plantis</div>
-            <div className="subtitle">For all your plant care needs</div>  
-            <ButtonGroup aria-label="Basic example" id='buttons'>
-                    <Button variant="light" href='/pages/login' size="lg">Sign Up</Button>
-                    <Button variant="light" href='/pages/login' size="lg">Log In</Button>
-                </ButtonGroup>
-        </Col>
+<div className='container home'>
 
-          
-        </Row>
-        </div>
+<Row>
+<Col className='col'>
+<div className="title" id='one'>Plantis</div>
+<div className="subtitle">For all your plant care needs</div>  
+<ButtonGroup aria-label="Basic example" id='buttons'>
+        <Button variant="light" href='/pages/login' size="lg">Sign Up</Button>
+        <Button variant="light" href='/pages/login' size="lg">Log In</Button>
+    </ButtonGroup>
+</Col>
+
+
+</Row>
+</div>
+       </div>
+        
 
         
        
