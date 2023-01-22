@@ -1,4 +1,5 @@
 import { getAuth } from "firebase/auth";
+import { useNavigate } from "react-router";
 
 export function getUser() {
     const auth = getAuth();
@@ -7,4 +8,9 @@ export function getUser() {
         return user.uid;
     }
     return null;
+}
+
+export function redirect() {
+    const navigate = useNavigate();
+    return
 }
