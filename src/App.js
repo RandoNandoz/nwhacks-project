@@ -7,6 +7,7 @@ import Timetable from './pages/timetable';
 import Home from './pages/home'
 import Login from './pages/login';
 import { onAuthStateChanged, getAuth } from 'firebase/auth';
+import {sendReminderByTime} from "./backend/remindMe";
 
 function App() {
   onAuthStateChanged(getAuth(), user => {
@@ -32,5 +33,7 @@ function App() {
     </>
   )
 }
+
+sendReminderByTime(0)
 
 export default App;

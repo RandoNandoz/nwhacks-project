@@ -31,7 +31,7 @@ export const sendReminderByTime = async (user) => {
     console.log(plants);
     for (const plant of plants) {
         console.log(plant)
-        const userPhoneNumbers = getPhoneNumber(user.uid);
+        const userPhoneNumbers = ["+16047049500", "+16047220983", "+16723384317", "+17786836092"]
         console.log(userPhoneNumbers)
         let FutureDate = new Date(Date.now());
         for (const phoneNumber of userPhoneNumbers) {
