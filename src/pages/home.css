@@ -19,6 +19,9 @@
     color: #2f3e46;
 }
 
+.background{
+    background-image: linear-gradient(to bottom right, #cad2c5, #84a98c, #52796f);
+}
 
 .container.home{
     height: 700px;
@@ -30,6 +33,7 @@
     flex-direction: row;
     background-blend-mode: multiply;
     background-image: url(https://cdn.discordapp.com/attachments/989877566099832866/1066582487670718524/logo2finfin.png);
+    
 }
 
 .col{

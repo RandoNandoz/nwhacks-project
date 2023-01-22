@@ -3,6 +3,8 @@ import React from "react";
 import { createUser, signInUser } from "../backend/firebaseAuth";
 import { setPhoneNumber } from "../backend/phoneNumbers"
 import { getUser } from "../backend/getUser"
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
 
 export default class login extends React.Component {
   constructor(props) {
@@ -62,6 +64,8 @@ export default class login extends React.Component {
 
   render() {
     return (
+      <Col>
+      <Card body>
       <div className="wrapper">
         <img src="https://cdn.discordapp.com/attachments/1066426699669057737/1066526497747243058/IMG_0391.png" alt="plant" ></img>
         <div className="container">
@@ -135,10 +139,15 @@ export default class login extends React.Component {
               </div>
             )}
         </div>
-        <footer className="footer">
+        
+        
+      </div>
+      </Card>
+      <footer className="footer">
           <p className="text-footer">Copyright ©-All rights are reserved</p>
         </footer>
-      </div>
+      </Col>
+      
     )
   }
 }
