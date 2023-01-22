@@ -1,3 +1,9 @@
 Card.Title {
     background-color: lightgreen;
 }
+
+.container1.log{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}

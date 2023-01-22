@@ -4,7 +4,8 @@ import "./logpage.css";
 
 export default function LogPage() {
     return (
-            <Card style={{ width: '18rem' }}
+        <div className='container1 log'>
+<Card style={{ width: '18rem' }}
             bg={"Success"}>
             <Card.Img variant="top" src="https://www.ikea.com/ca/en/images/products/fejka-artificial-potted-plant-with-pot-indoor-outdoor-succulent__0614211_pe686835_s5.jpg?f=s" />
             <Card.Body>
@@ -17,6 +18,8 @@ export default function LogPage() {
               <Button variant="primary">More info</Button>
             </Card.Body>
           </Card>
+        </div>
+            
           
       );
 }

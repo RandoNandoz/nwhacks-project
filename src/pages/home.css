@@ -32,10 +32,6 @@
     background-image: url(https://cdn.discordapp.com/attachments/989877566099832866/1066582487670718524/logo2finfin.png);
 }
 
-.container.home::before{
-    
-}
-
 .col{
     flex-grow: 1;
     flex-shrink: 0;
