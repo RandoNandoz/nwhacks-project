@@ -1,6 +1,5 @@
 import { getUserPlantsFromDb } from "../backend/getUserPlantsFromDb";
-import { God } from "../backend/God";
-
+import { getUser } from "../backend/    r";
 const f = () => {
     getUserPlantsFromDb(God.uid).then (
         (plants) => {

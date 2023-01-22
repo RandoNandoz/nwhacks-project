@@ -1,6 +1,8 @@
 import "./login.css";
 import React from "react";
 import { createUser, signInUser } from "../backend/firebaseAuth";
+import { setPhoneNumber } from "../backend/phoneNumbers"
+import { getUser } from "../backend/getUser"
 
 export default class login extends React.Component {
   constructor(props) {
@@ -46,6 +48,9 @@ export default class login extends React.Component {
   sumbitCreateAccount(event) {
     event.preventDefault();
     createUser(this.state.username, this.state.password);
+    setTimeout(() => {
+        setPhoneNumber(this.state.phonenumber, getUser());
+    }, 1000);
   }
   sumbitLogin(event) {
     event.preventDefault();
@@ -69,6 +74,7 @@ export default class login extends React.Component {
                     type="text"
                     value={this.state.username}
                     onChange={this.handleusername}
+                    required
                   />
                 </div>
                 <div className="info">
@@ -77,6 +83,7 @@ export default class login extends React.Component {
                     type="password"
                     value={this.state.password}
                     onChange={this.handlepassword}
+                    required
                   />
                 </div>
                 <div className="info">
@@ -97,6 +104,7 @@ export default class login extends React.Component {
                     type="text"
                     value={this.state.username}
                     onChange={this.handleusername}
+                    required
                   />
                 </div>
                 <div className="info">
@@ -105,6 +113,7 @@ export default class login extends React.Component {
                     type="password"
                     value={this.state.password}
                     onChange={this.handlepassword}
+                    required
                   />
                 </div>
                 <div className="info">
@@ -113,6 +122,7 @@ export default class login extends React.Component {
                     type="text"
                     value={this.state.phonenumber}
                     onChange={this.handlephonenumber}
+                    required
                   />
                 </div>
                 <div className="info">
