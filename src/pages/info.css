@@ -42,3 +42,10 @@ img {
 h3 {
     font-family: "Quicksand";
 }
+
+.plant-name{
+    background-color: #84a98c;
+    border-radius: 20px;
+    flex-shrink: 1;
+}
+
