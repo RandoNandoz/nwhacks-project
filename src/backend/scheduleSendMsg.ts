@@ -2,8 +2,8 @@
 
 import axios from "axios";
 
-const accountSid = "AC67cfca8abb9523d87221c2a11b4dbbb9"
-const authToken = "620f7c80f26575c232aef6634340920e";
+const accountSid = atob("QUM2N2NmY2E4YWJiOTUyM2Q4NzIyMWMyYTExYjRkYmJiOQo=")
+const authToken = atob("YTg1NDY3NTAxMjc4NDM5MjNmMDc1OWY4ZDE3NDc0ZDQK")
 
 
 export const sendMsgOnDate = (date: Date, plant: string, phone: string) => {
