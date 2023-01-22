@@ -16,7 +16,7 @@ export default function Timetable() {
                 class="reminderbuttons">Cancel reminders</Button>
 
         <div className="calendar">
-        <h2 className="month"> January 2021 </h2>
+        <h2 className="month"> January 2023 </h2>
         <table>
             <thead>
                 <tr>
@@ -42,7 +42,7 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td>3
-                        <p class="watering-day">succulent</p>
+                        <p class="watering-day">Succulent</p>
                     </td>
                     <td id="d3">4</td>
                     <td id="d5">5</td>
@@ -66,7 +66,7 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td id="d17">17
-                    <p class="watering-day">succulent</p>
+                    <p class="watering-day">Succulent</p>
                     </td>
                     <td id="d18">18</td>
                     <td id="d19">19</td>
@@ -90,7 +90,7 @@ export default function Timetable() {
                 </tr>
                 <tr>
                     <td id="d31">31
-                    <p class="watering-day">succulent</p>
+                    <p class="watering-day">Succulent</p>
                     </td>
                     <td id="d32">1</td>
                     <td id="d33">2</td>
