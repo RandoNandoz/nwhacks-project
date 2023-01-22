@@ -1,8 +1,6 @@
 import './App.css';
-<<<<<<< HEAD
 import { createUser, signInUser } from './backend/firebaseAuth';
 import { SignInScreen } from './backend/SignInScreen';
-=======
 import { Route, Routes } from "react-router-dom"
 import Navbar from './NavBar';
 import Info from './pages/info'
@@ -10,7 +8,6 @@ import LogPage from './pages/logpage';
 import Timetable from './pages/timetable';
 import Home from './pages/home'
 import Login from './pages/login';
->>>>>>> 7f4646e385dd298cfdf06edb8dcf90a112e8ba6c
 
 
 function App() {
