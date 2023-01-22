@@ -3,12 +3,12 @@
     flex-direction: row;
     justify-content: space-around;
     padding-top: 2rem;
-    box-shadow: inset .6rem black;
 }
 
-.Create-account .Login {
+.Create-account,.Login {
     display: flex;
     flex-direction: column;
+    box-shadow: 1rem;
 }
 
 .info {
@@ -16,4 +16,8 @@
 }
 label{
     padding-right: .2rem;
+}
+
+img {
+    height: 15rem; width: 15rem;
 }
