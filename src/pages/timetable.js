@@ -41,7 +41,7 @@ export default function Timetable() {
                     <td>4</td>
                     <td>5</td>
                     <td>6
-                    <p class="watering-day">plant 2</p>
+                    <p class="watering-day">Chinese Money Plant</p>
                     </td>
                     <td>7</td>
                     <td>8</td>
@@ -52,7 +52,7 @@ export default function Timetable() {
                     <td>11</td>
                     <td>12</td>
                     <td>13
-                    <p class="watering-day">plant 2</p>
+                    <p class="watering-day">Chinese Money Plant</p>
                     </td>
                     <td>14</td>
                     <td>15</td>
@@ -65,7 +65,7 @@ export default function Timetable() {
                     <td>18</td>
                     <td>19</td>
                     <td>20
-                    <p class="watering-day">plant 2</p>
+                    <p class="watering-day">Chinese Money Plant</p>
                     </td>
                     <td>21</td>
                     <td>22</td>
@@ -76,7 +76,7 @@ export default function Timetable() {
                     <td>25</td>
                     <td>26</td>
                     <td>27
-                    <p class="watering-day">plant 2</p>
+                    <p class="watering-day">Chinese Money Plant</p>
                     </td>
                     <td>28</td>
                     <td>29</td>
@@ -89,7 +89,7 @@ export default function Timetable() {
                     <td>1</td>
                     <td>2</td>
                     <td>3
-                    <p class="watering-day">plant 2</p>
+                    <p class="watering-day">Chinese Money Plant</p>
                     </td>
                     <td>4</td>
                     <td>5</td>
