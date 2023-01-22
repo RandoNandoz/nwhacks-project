@@ -2,9 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "./logpage.css";
 import TestPlant from '../components/test';
-<<<<<<< Updated upstream
-import { God } from '../components/test';
-=======
+//import { God } from '../components/test';
 //import "./DeleteTest.js";
 import React from "react";
 import ReactDOM from 'react-dom/client';
@@ -30,7 +28,6 @@ class DeleteTest extends React.Component {
       );
     }
   }
->>>>>>> Stashed changes
 
 export default function LogPage() {
     return (
