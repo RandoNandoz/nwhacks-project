@@ -56,7 +56,7 @@ export default class login extends React.Component {
     return (
       <div className="wrapper">
         <img src="https://cdn.discordapp.com/attachments/1066426699669057737/1066526497747243058/IMG_0391.png" alt="plant" ></img>
-        <div className="container">
+        <div className="container login">
           {this.state.showSignIn ? (
             <div className="Login">
               <form onSubmit={this.sumbitLogin}>
