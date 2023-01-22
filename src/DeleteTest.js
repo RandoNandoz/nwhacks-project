@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
-import TestPlant from "../components/test";
+import TestPlant from "./components/test";
 
 class DeleteTest extends React.Component {
     constructor(props) {

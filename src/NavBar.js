@@ -10,16 +10,16 @@ export default function Navbar () {
         
         <ul>
             <li>
-                <a href="/pages/info">Info</a>
+                <a href="/info">Info</a>
             </li>
             <li>
-                <a href="/pages/logpage">Logs</a>
+                <a href="/logpage">Logs</a>
             </li>
             <li>
-            <a href="/pages/timetable">Timetable</a>
+            <a href="/timetable">Timetable</a>
             </li>
             <li>
-            <a href="/pages/login">Log In</a>
+            <a href="/login">Log In</a>
             </li>
         </ul>
     </nav>

@@ -1,7 +1,7 @@
 import "./timetable.css";
 import Button from 'react-bootstrap/Button';
-import { sendReminderByTime, stopReminders} from "../backend/remindMe";
-import {getUser} from "../backend/getUser";
+import { sendReminderByTime, stopReminders} from "./backend/remindMe";
+import {getUser} from "./backend/getUser";
 
 export default function Timetable() {
     console.log(getUser())
@@ -102,7 +102,7 @@ export default function Timetable() {
             </tbody>
         </table>
         </div>
-            <script src="timetablelib.ts" async defer></script>
+            <script src="src/timetablelib.ts" async defer></script>
     </div>
     );
 }

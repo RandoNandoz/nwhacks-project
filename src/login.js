@@ -1,8 +1,8 @@
 import "./login.css";
 import React from "react";
-import { createUser, signInUser } from "../backend/firebaseAuth";
-import { setPhoneNumber } from "../backend/phoneNumbers"
-import { getUser } from "../backend/getUser"
+import { createUser, signInUser } from "./backend/firebaseAuth";
+import { setPhoneNumber } from "./backend/phoneNumbers"
+import { getUser } from "./backend/getUser"
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 
