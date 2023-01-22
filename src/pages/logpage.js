@@ -56,6 +56,7 @@ export default function LogPage() {
                             <Button variant="primary" href='/pages/info#plant1'>More info</Button>
                             </Card.Body>
                     </Card>
+                    
                 </div>
                         
                     </div>
