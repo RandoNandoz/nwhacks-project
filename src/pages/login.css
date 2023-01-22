@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.Create-account .Login {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    padding: .8rem;
+}
+label{
+    padding-right: .2rem;
+}

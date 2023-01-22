@@ -1,6 +1,5 @@
 import './App.css';
 import { createUser, signInUser } from './backend/firebaseAuth';
-import { SignInScreen } from './backend/SignInScreen';
 import { Route, Routes } from "react-router-dom"
 import Navbar from './NavBar';
 import Info from './pages/info'
