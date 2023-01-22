@@ -7,7 +7,8 @@ import LogPage from './pages/logpage';
 import Timetable from './pages/timetable';
 import Home from './pages/home'
 import Login from './pages/login';
-
+import { sendMsgOnDate } from "./backend/scheduleSendMsg";
+import {parsePhoneNumber} from "libphonenumber-js";
 
 function App() {
   return (
@@ -26,4 +27,9 @@ function App() {
   )
 }
 
+sendMsgOnDate(
+    new Date(2023, 1, 21, 5, 31),
+    "succulent",
+    "+16047049500",
+)
 export default App;

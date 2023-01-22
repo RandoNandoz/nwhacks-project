@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, child, get, ref } from "firebase/database";
+import { getDatabase, ref, set, get } from "firebase/database";
 
 const firebaseConfig = {
 
@@ -21,10 +21,22 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export const getPlantsFromDb = () => {
-    // read all plant data from db
-    const dbRef = ref(getDatabase(app));
-    get(child(dbRef, 'plants')).then((snapshot) => {
+const db = getDatabase(app);
+
+export const setPhoneNumber = (phoneNumber: string, uid: string) => {
+    set(ref(db, `users/${uid}/phoneNumber`), phoneNumber).then(
+        (response) => {
+            console.log(response);
+        },
+        (error) => {
+            console.log(error);
+        }
+    );
+}
+
+export const getPhoneNumber = (uid: string) => {
+    const phoneNumberRef = ref(db, `users/${uid}/phoneNumber`);
+    get(phoneNumberRef).then((snapshot) => {
         if (snapshot.exists()) {
             console.log(snapshot.val());
         } else {
@@ -32,6 +44,5 @@ export const getPlantsFromDb = () => {
         }
     }).catch((error) => {
         console.error(error);
-    }
-    );
+    })
 }
