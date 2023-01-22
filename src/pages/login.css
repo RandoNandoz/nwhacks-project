@@ -38,3 +38,9 @@ label{
 form{
     margin-bottom: 10px;
 }
+
+footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
