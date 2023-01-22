@@ -10,8 +10,10 @@ export default function Timetable() {
             <h1 className="title">
 				Plant Watering Schedule
 			</h1>
-                <Button variant="light" onClick={getUser() !== null ? sendReminderByTime(getUser().uid) : Function.prototype()}>Remind me to water my plants</Button>
-                <Button variant="light" onClick={getUser() !== null ? stopReminders(getUser().uid) : Function.prototype()}>Cancel reminders</Button>
+                <Button variant="light" onClick={getUser() !== null ? sendReminderByTime(getUser().uid) : Function.prototype()}
+                class="reminderbuttons">Remind me to water my plants</Button>
+                <Button variant="light" onClick={getUser() !== null ? stopReminders(getUser().uid) : Function.prototype()}
+                class="reminderbuttons">Cancel reminders</Button>
 
         <div className="calendar">
         <h2 className="month"> January 2021 </h2>
