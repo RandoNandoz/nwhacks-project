@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "./logpage.css";
 import TestPlant from '../components/test';
+import { God } from '../components/test';
 
 export default function LogPage() {
     return (

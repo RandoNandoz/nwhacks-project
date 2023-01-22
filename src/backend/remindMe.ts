@@ -26,13 +26,13 @@ const app = initializeApp(firebaseConfig);
 
 const db = getDatabase(app);
 
-export const sendReminderByTime = async (e, user) => {
+export const sendReminderByTime = async (e, uid) => {
     e.preventDefault()
-    const plants = await getUserPlantsFromDb(user);
+    const plants = await getUserPlantsFromDb(uid);
     console.log(plants);
     for (const plant of plants) {
         console.log(plant)
-        const userPhoneNumbers = getPhoneNumber(user.uid);
+        const userPhoneNumbers = getPhoneNumber(uid);
         console.log(userPhoneNumbers)
         let FutureDate = new Date(Date.now());
         for (let phoneNumber of userPhoneNumbers) for (let i = 0; i <= 10; i++) {
@@ -42,9 +42,9 @@ export const sendReminderByTime = async (e, user) => {
             if (sid !== null) {
                 const dbRef = ref(db);
                 let snapshot;
-                snapshot = await get(child(dbRef, `users/${user.uid}/pendingMsgs`));
+                snapshot = await get(child(dbRef, `users/${uid}/pendingMsgs`));
                 snapshot.val().push(sid)
-                await set(ref(db, `users/${user.uid}`), {
+                await set(ref(db, `users/${uid}`), {
                     'pendingMsgs': snapshot.val()
                 })
             }
@@ -53,10 +53,10 @@ export const sendReminderByTime = async (e, user) => {
 }
 
 
-export const stopReminders = (e, user) => {
+export const stopReminders = (e, uid) => {
     e.preventDefault()
     const dbRef = ref(db);
-    get(child(dbRef, `users/${user.uid}/pendingMsgs`)).then((snapshot) => {
+    get(child(dbRef, `users/${uid}/pendingMsgs`)).then((snapshot) => {
         if (snapshot.exists()) {
             for (const msg of snapshot.val()) {
                 cancelMsg(msg)

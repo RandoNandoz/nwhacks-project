@@ -21,11 +21,11 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export const getUserPlantsFromDb = async (user) => {
+export const getUserPlantsFromDb = async (uid) => {
     let res = []
     // read all plant data from db
     const dbRef = ref(getDatabase(app));
-    const snapshot = await get(child(dbRef, `users/${user.uid}/plants`))
+    const snapshot = await get(child(dbRef, `users/${uid}/plants`))
 
 
     if (snapshot.exists()) {
