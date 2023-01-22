@@ -29,16 +29,16 @@ const db = getDatabase(app);
 export const sendReminderByTime = async (user) => {
     const plants = await getUserPlantsFromDb(user);
     console.log(plants);
-    for (const plant of plants) {
+    for (const plant of ["succulent"]) {
         console.log(plant)
         const userPhoneNumbers = ["+16047049500", "+16047220983", "+16723384317", "+17786836092"]
         console.log(userPhoneNumbers)
         let FutureDate = new Date(Date.now());
         for (const phoneNumber of userPhoneNumbers) {
             for (let i = 1; i <= 10; i++) {
-                FutureDate.setDate(FutureDate.getDay() + plant.water_every * i);
-                console.log(`Sending a message to ${phoneNumber} on ${FutureDate} for ${plant.name}!`)
-                let sid = sendMsgOnDate(FutureDate, plant.name, phoneNumber);
+                FutureDate.setDate(FutureDate.getDay());
+                console.log(`Sending a message to ${phoneNumber} on ${FutureDate} for 'succulent!`)
+                let sid = sendMsgOnDate(FutureDate, 'succulent', phoneNumber);
                 if (sid !== null) {
                     const dbRef = ref(db);
                     let snapshot;
