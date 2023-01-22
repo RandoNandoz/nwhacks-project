@@ -6,6 +6,8 @@ import TestPlant from '../components/test';
 //import "./DeleteTest.js";
 import React from "react";
 import ReactDOM from 'react-dom/client';
+import { God } from '../components/test';
+
 
 class DeleteTest extends React.Component {
     constructor(props) {
@@ -47,22 +49,48 @@ export default function LogPage() {
                 </Button>{' '}
 
                 <div className='CardContainer'>
+                    <TestPlant/>
+
                     <Card style={{ width: '18rem' }} bg={"Success"}>
                         <Card.Img variant="top" src="https://www.ikea.com/ca/en/images/products/fejka-artificial-potted-plant-with-pot-indoor-outdoor-succulent__0614211_pe686835_s5.jpg?f=s" />
                         <Card.Body>
-                        <Card.Title>
-                          Succulent
-                        </Card.Title>
-                        <Card.Subtitle>
-                          Name:
-                        </Card.Subtitle>
-                        <Button variant="primary" href='/pages/info#plant1'>More info</Button>
-                        </Card.Body>
+                            <Card.Title>
+                                Succulent
+                            </Card.Title>
+                            <Card.Subtitle>
+                                Name:
+                            </Card.Subtitle>
+                            <Button variant="primary" href='/pages/info#plant1'>More info</Button>
+                            </Card.Body>
                     </Card>
-                    <DeleteTest />
+                    <Card style={{ width: '18rem' }} bg={"Success"}>
+                        <Card.Img variant="top" src="https://www.ikea.com/ca/en/images/products/fejka-artificial-potted-plant-with-pot-indoor-outdoor-succulent__0614211_pe686835_s5.jpg?f=s" />
+                        <Card.Body>
+                            <Card.Title>
+                                Succulent
+                            </Card.Title>
+                            <Card.Subtitle>
+                                Name:
+                            </Card.Subtitle>
+                            <Button variant="primary" href='/pages/info#plant1'>More info</Button>
+                            </Card.Body>
+                    </Card>
+                    <Card style={{ width: '18rem' }} bg={"Success"}>
+                        <Card.Img variant="top" src="https://www.ikea.com/ca/en/images/products/fejka-artificial-potted-plant-with-pot-indoor-outdoor-succulent__0614211_pe686835_s5.jpg?f=s" />
+                        <Card.Body>
+                            <Card.Title>
+                                Succulent
+                            </Card.Title>
+                            <Card.Subtitle>
+                                Name:
+                            </Card.Subtitle>
+                            <Button variant="primary" href='/pages/info#plant1'>More info</Button>
+                            </Card.Body>
+                    </Card>
+                </div>
+                        
                     </div>
                 </div>
-              </div>
       
       );
 }
