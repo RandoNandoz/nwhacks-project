@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.Create-account,.Login {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1rem;
+}
+
+.info {
+    padding: .8rem;
+}
+label{
+    padding-right: .2rem;
+}
+
+img {
+    height: 15rem; width: 15rem;
+}
