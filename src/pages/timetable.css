@@ -35,3 +35,7 @@ thead {
     font-family: "Quicksand";
     text-align: center;
 }
+
+.table .btn{
+    margin-top: 10px;
+}

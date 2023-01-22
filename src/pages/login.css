@@ -44,3 +44,7 @@ footer{
     justify-content: center;
     text-align: center;
 }
+
+#noacc{
+    border-style: outset;
+}
