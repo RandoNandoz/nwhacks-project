@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, } from "firebase/auth";
 
 const firebaseConfig = {
 
@@ -56,3 +56,4 @@ export function signInUser(email, password) {
         });
     return user
 }
+
