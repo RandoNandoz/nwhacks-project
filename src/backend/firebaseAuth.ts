@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 
-export function createUser (email, password) {
+export const createUser = (email: string, password: string) => {
     
     let user = null;
     createUserWithEmailAndPassword(auth, email, password)
@@ -41,7 +41,7 @@ export function createUser (email, password) {
     return user
 }
 
-export function signInUser(email, password) {
+export const signInUser = (email: string, password: string) => {
     
     let user = null;
     signInWithEmailAndPassword(auth, email, password)
@@ -59,3 +59,7 @@ export function signInUser(email, password) {
     return user
 }
 
+
+export const userLinkPhoneNumber = (phoneNumber: string, user) => {
+
+}

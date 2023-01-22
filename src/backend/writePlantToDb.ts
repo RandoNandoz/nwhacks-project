@@ -27,7 +27,7 @@ const db = getDatabase(app);
 //     const dbRef = db;
 // }
 
-const writePlantToDb = (name, desc, image_url, water_every, pruning, soil, sunlight, fertilzer) => {
+const writePlantToDb = async (name, desc, image_url, water_every, pruning, soil, sunlight, fertilzer) => {
     set(ref(db, 'plants/' + name), {
         "name": name,
         "desc": desc,

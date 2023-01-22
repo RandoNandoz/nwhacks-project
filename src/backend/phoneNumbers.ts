@@ -34,13 +34,13 @@ export const setPhoneNumber = (phoneNumber: string, uid: string) => {
     );
 }
 
-export const getPhoneNumber = (uid: string) => {
-    let res = ""
+export const getPhoneNumber = (uid: string): string[] => {
+    let res = []
     const phoneNumberRef = ref(db, `users/${uid}/phoneNumber`);
     get(phoneNumberRef).then((snapshot) => {
         if (snapshot.exists()) {
             for (const key in snapshot.val()) {
-                res = snapshot.val()[0]
+                res.push(snapshot.val()[key])
             }
         } else {
             console.log("No data available");

@@ -21,23 +21,19 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export  const getPlantsFromDb = async () => {
+export const getUserPlantsFromDb = async (user) => {
     let res = []
     // read all plant data from db
     const dbRef = ref(getDatabase(app));
-    const snapshot = await get(child(dbRef, 'plants'))
+    const snapshot = await get(child(dbRef, `users/${user.uid}/plants`))
 
 
-    let x = snapshot.val()
-    console.log(snapshot.val().Succulent)
-    console.log(x)
-    console.log(x === snapshot.val())
     if (snapshot.exists()) {
         for (const key in snapshot.val()) {
             res.push(snapshot.val()[key])
         }
     } else {
-        console.log("No data available");
+        console.log("You have no plants!");
     }
 
     return res
