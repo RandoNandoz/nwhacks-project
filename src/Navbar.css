@@ -12,7 +12,7 @@
 
   .container1{
     display: flex;
-    font-family: 'Raleway',sans-serif;
+    font-family: "Quicksand";
     
      font-weight: 800;
       line-height: 72px;
@@ -28,7 +28,7 @@
   }
   
 ul{
-    font-family: 'Raleway',sans-serif;
+  font-family: "Quicksand";
     
     font-size: 20px;
      font-weight: 700;

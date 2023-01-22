@@ -3,6 +3,9 @@ import "./timetable.css";
 export default function Timetable() {
     return (
         <div class="table">
+<h1 class="title">
+					Plant Watering Schedule
+				</h1>
         <h2 class="month"> January 2021 </h2>
         <table>
             <thead>

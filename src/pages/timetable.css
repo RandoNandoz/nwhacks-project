@@ -10,14 +10,21 @@ td {
     height: 100px;
     text-align: right;
     align-items: top;
+    font-family: "Raleway";
 }
 .month {
     margin: 20px 0px 15px 0px;
+    font-family: "Quicksand";
 }
 
 .watering-day {
     background-color: #094217;
     color: white;
     border-radius: 5px;
+    text-align: center;
+}
+
+thead {
+    font-family: "Quicksand";
     text-align: center;
 }
